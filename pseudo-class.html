@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+    <style>
+        h1:hover {
+            color: #e43754;
+            background-color: royalblue;
+        }
+        .middle-input:hover {
+            color: royalblue;
+            padding: 5px;
+            
+        }
+        .last-input:focus {
+            color: red;
+            padding: 5px;
+            font-weight: 700;
+        }
+        a:visited {
+            color: blue;
+        }
+        li:first-child {
+            color: blueviolet;
+        }
+        li:last-child {
+            color: brown;
+        }
+        li:nth-child(2n) {
+            color: green;
+        }
+        li:nth-child(2n+1) {
+            background-color: grey;
+        }
+        .pseudo-element::after {
+            content: " new";
+            color: red;
+        }
+        .pseudo-element::before {
+            content: "Hello ";
+            font-size: 20px;
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complete Web Development Course With Jhankar Mahbub</h1>
+    <input type="text" placeholder="Inter your name" name="name" id="">
+    <input class="middle-input" type="text" placeholder="Inter your e-mail" name="name" id="">
+    <input class="last-input" type="text" placeholder="Inter your number" name="name" id=""> <br>
+    <a href="https://www.programming-hero.com/" target="-blank">programming-hero</a> <br> 
+    <a href="https://www.youtube.com/" target="-blank">Youtube</a> <br>
+    <a href="https://github.com/" target="-blank">github</a>
+    
+    <ul>
+        <li>Baby -1</li>
+        <li>Baby -2</li>
+        <li>Baby -3</li>
+        <li>Baby -4</li>
+        <li>Baby -5</li>
+        <li>Baby -6</li>
+        <li>Baby -7</li>
+    </ul>
+
+    <h2>Pseudo element</h2>
+    <ol>
+        <li class="pseudo-element">Jhanker Mahbub -1</li>
+        <li class="pseudo-element">Jhanker Mahbub -2</li>
+        <li class="pseudo-element">Jhanker Mahbub -3</li>
+        <li class="pseudo-element">Jhanker Mahbub -4</li>
+        <li class="pseudo-element">Jhanker Mahbub -5</li>
+    </ol>
+</body>
+</html>
